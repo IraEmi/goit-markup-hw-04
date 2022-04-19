@@ -1,0 +1,416 @@
+/* Стилі які приміняються до основної сторінки та портфоліо */
+:root {
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color: #2196F3;
+    --one-background-color: #FFFFFF;
+    --two-background-color:#2F303A;
+    --tree-background-color: #F5F4FA;
+    --first-change-pх:30px;
+}
+
+body {
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+p, h1, h2, h3, ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+
+ .section {
+     padding-top: 94px;
+     padding-bottom: 94px;
+     /* outline: 1px solid green; */
+     margin: 0;
+ }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Стилізація логотипу до основної сторінки та портфоліо*/
+.logo {
+    margin-right: 93px;
+    Font-family: Raleway;
+    Font-weight: 700;
+    Font-size: 26px;
+    Line-height: 1.2;
+    color: var(--accent-color);
+}
+
+.accent {
+    color: var(--title-text-color);
+}
+ 
+.accent-footer {
+    color: var(--one-background-color);
+}
+
+/* Стилізація header основної сторінки та портфоліо */
+.header {
+    /* padding-top: 32px; */
+    /* padding-bottom: 32px; */
+    border-bottom: 1px solid #ECECEC;
+    background-color:var(--one-background-color);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display:flex;
+}
+
+.item {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.item:not(:last-child){
+    margin-right: 50px;
+}
+
+/* .nav-list .item + .item { 
+    margin-left: 50px;
+} */
+
+.nav-item {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+
+.current {
+    color:var(--accent-color);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--accent-color);
+}
+
+.contact-list{
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-link, .contact-tel {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+.contact-link:hover,
+.contact-link:focus,
+.contact-tel:hover,
+.contact-tel:focus {
+    color: var(--accent-color);
+}
+
+
+/* ---------------СТИЛІЗАЦЯ ОСНОВНОЇ СТОРІНКИ----------*/
+/* Герой */
+.hero {
+    padding: 200px 0px;
+    background-color:var(--two-background-color);
+    text-align: center;
+}
+
+.text-content {
+    width: 696px;
+    margin: auto;
+}
+.hero-text {
+    margin-bottom: 30px;
+    color: var(--one-background-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.136;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button {
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-color: var(--accent-color);
+    color: var(--one-background-color);
+    font-weight: 700;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}    
+
+/* Особености */
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+}
+
+.features-item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-right: 30px;
+}
+
+.features-title {
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.features-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/*Чем мы занимаемся*/
+.work {
+    padding-top: 0;
+}
+.work-title {
+   margin-bottom: 50px; 
+   color: var(--title-text-color);  
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+}
+
+.work-img {
+    flex-basis: calc((100% - 90px)/3);
+    margin-right: 30px;
+}
+ 
+/* Наша команда */
+.team {
+    background-color: var(--tree-background-color);
+}
+
+.team-title {
+   margin-bottom: 50px;
+   color: var(--title-text-color);  
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+
+.team-list {
+    display: flex;
+    margin-right: -30px;
+}
+
+.team-item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-right: 30px;
+    /* border: 1px solid black; */
+}
+
+.team-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.team-name {
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    /* margin-bottom: 30px; */
+   
+}
+/* Стилізація footer до основної сторінки та портфоліо */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:var(--two-background-color);
+}
+
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+.address {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+
+.address-text {
+    margin-bottom: 9px;
+    color:var(--one-background-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.link, .tel {
+    display: block;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link {
+    margin-bottom: 9px;
+}
+
+.link:hover,
+.link:focus,
+.tel:hover,
+.tel:focus {
+    color: var(--accent-color);
+}
+/*забираю крапки з ненумерованого стиску  */
+.list {
+    list-style: none;
+}
+
+.decoration {
+    text-decoration: none;
+}
+
+
+
+/*--------------СТИЛІЗАЦІЯ ПОРТФОЛІО----------- */
+/* Фильтр страницы */
+
+.filter-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn-list {
+    margin-right: 8px;
+}
+
+.filter-list li:last-child {
+    margin-right: 0;
+}
+
+.btn-filter {
+    padding: 6px 22px;
+    background-color:var(--tree-background-color);
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+    background-color: var(--accent-color);
+    color:var(--one-background-color);
+}
+
+/* Выполненные проекты */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+} 
+
+.projects-list {
+    background-color: var(--one-background-color);
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.projects-content {
+    padding: 20px 24px;
+
+}
+
+.projects-item {
+    margin-bottom: 4px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+ .projects-text {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+ }
