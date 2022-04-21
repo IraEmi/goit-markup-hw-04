@@ -428,6 +428,7 @@ img {
 
 .position {
     display: flex;
+    align-items: baseline;
 }
 
 .logo-footer {
@@ -469,7 +470,6 @@ img {
 }
 
 .join {
-    padding-top: 12px;
     margin-left: 70px;
 }
 
